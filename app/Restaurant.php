@@ -23,4 +23,9 @@ class Restaurant extends Model
     {
         return $this->belongsTo('App\Prefecture');
     }
+    
+    public function post()
+    {
+        return $this->hasOne('App\Post');
+    }
 }

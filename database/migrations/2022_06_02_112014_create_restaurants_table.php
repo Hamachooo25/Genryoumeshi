@@ -19,7 +19,7 @@ class CreateRestaurantsTable extends Migration
             $table->string('email');
             $table->string('password');
             $table->string('address');
-            $table->string('prefecture_id');
+            $table->integer('prefecture_id')->unsigned();
             $table->timestamps();
         });
     }

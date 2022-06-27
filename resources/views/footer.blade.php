@@ -1,7 +1,7 @@
 <div class="footer">
     <ul>
-        <li>About</li>
-        <li>Contact</li>
+        <li href="">About</li>
+        <li href="">Contact</li>
         <li>Copyright</li>
     </ul>
 </div>

@@ -1,74 +1,117 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Potta+One&display=swap');
+
+body {
+	width:100%;
+	font-family:'Mochiy Pop One', sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #000000;
+	background-color: #ffffff;
+	
+}
+
 header{
-	background-color: ;
+	font-family:'Potta One', cursive;
+	display:block;
+    background-image: linear-gradient(90deg, rgba(115, 248, 224, 1), rgba(150, 167, 241, 1));
 	height:100px;
 	position: fixed;
-    top: 0;
-    left: 0;
+	top:0;
     width: 100%;
     z-index: 10;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
+    box-shadow: 0 10px 25px 0 rgba(60, 194, 235, 0.5);
 }
 .logo{
-	padding:40px 60px;
-	font-size: 40px;
+	font-family:'Potta One', cursive;
+	padding:30px 40px;
+	font-size: 35px;
 	position: relative;
 	float:left;
  }
+
 .nav-container{
-	padding:40px  200px;
-	float:right;
-}
-.nav-container ul li{
-	font-size:20px;
-	float:left;
-	margin-left: 60px;
+	height: 100%;
+	position: relative;
+	font-family:Impact;
+	font-size:30px;
 }
 
+li a{
+	color:#fff;
+}
+
+.nav-container ul{ 
+	padding-top: 35px;
+	padding-right: 100px;
+	float:right;
+}
+
+.nav-container ul li{
+	padding-left: 20px;
+	float:left;
+	list-style:none;
+}
+
+
 .search-container{
-	height:800px;
+	text-align: center;
 	position:relative;
 }
 
-
-
-.search-container img{
+.healthy-img {
 	height:100%;
 	width:100%;
 	object-fit: cover;
-	opacity:0.9;
+	opacity: 0.75;
+
 }
+
+
 .search-container h2{
-	top:30%;
-	left:30%;
+	font-family:'Potta One', cursive;
+	top:40%;
+	left:35%;
 	position:absolute;
 	font-size:30px;
 }
 
-
-
-.search{
+form{
 	top:50%;
-	left:30%;
-	position:absolute;
-	
+	left: 35%;
+	position: absolute;
+}
+
+
+
+input{
+	text-align: center;
+
 }
 
 
 .txt{
+	height:46px;
 	width:400px;
-	height:40px;
+	position:relative;
+	border-radius:30px;
+	size:30px;
+	box-shadow:0 10px 25px 0 rgba(0, 0, 0, .5);
 }
 
+::placeholder{
+	text-align: center;
+}
 .btn{
-	width:50px;
 	height:40px;
+	position:absolute;
+	padding-top:8px;
+	margin-left: -60px;
 }
-
-
 
 
 /* CSSリセット */
@@ -76,16 +119,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers  */ article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; 
 }
 
-body {
-	font-family: "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", sans-serif;
-	font-size: 16px;
-	line-height: 1.5em;
-	color: #000000;
-	background-color: #ffffff;
-}
+
 
 .explain h1{
-	padding-top:130px;
+	font-family:'Mochiy Pop One', sans-serif;
+	padding-top:100px;
 	text-align: center;
 	font-size: 40px;
 }
@@ -529,101 +567,175 @@ a:hover {
 	レスポンシブ
 
 ****************************************/
-/*
+
+
 @media screen and (max-width: 776px) {
-#japan-map {
-	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-#japan-map p.area-title {
-	display: inline-block;
-	width: 100%;
-	font-size: 15px;
-	text-align: center;
-	margin-top: 1.5em;
-	margin-bottom: 1em;
-	color: #000000;
-}
-#hokkaido-touhoku, #kantou, #tyubu, #kinki, #tyugoku, #shikoku, #kyusyu {
-	display: block;
-	position: static;
-	margin: 0 1em 0 1em;
-}
-#japan-map div div.area {
-	display: block;
-	position: relative;
-}
+	
+	.nav-container{
+	width:50%;
+	right:30px;
+	float:right;
+	}
+	.nav-container ul{ 
+	padding-right:0px;
+	padding-top: 30px;
+	float:right;
+	}
+	
+	.search-container h2{
+		font-family:'Potta One', cursive;
+		left: 240px;
+		font-size: 20px;
+	}
+	
+	.txt{
+		width:300px;
+	}
+	
+	.btn{
+		right:15px;
+	}
 
-#hokkaido-touhoku {
-	height: calc(265px + 4.5em);
-}
-#kantou {
-	height: calc(174px + 4.5em);
-}
-#tyubu {
-	height: calc(211px + 4.5em);
-}
-#kinki {
-	height: calc(211px + 4.5em);
-}
-#tyugoku {
-	height: calc(98px + 4.5em);
-}
-#shikoku {
-	height: calc(84px + 4.5em);
-}
-#kyusyu {
-	height: calc(247px + 4.5em);
-}
-
-}
-/*
-/* レスポンシブ max-776px */
-
-
-
-@media screen and (max-width: 500px) {
-#japan-map {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-#hokkaido-touhoku, #kantou, #tyubu, #kinki, #tyugoku, #shikoku, #kyusyu {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	height: auto;
-	position: static;
-	margin-left: 0px;
-	margin-right: 0px;
-}
-#japan-map div div.area {
-	font-size: 14px;
- 	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-}
-#japan-map div div.area a {
-	height: auto;
-	width: 25%;
-}
-#japan-map div div.area div {
- 	display: block;
-	border-radius: 0px;
-	position: static;
-	height: auto;
-	font-size: 16px;
-	width: 100%;
-	padding: 0.5em 0.3em 0.5em 0.3em;
-}
+	.explain h1{
+	display:none;
+	}
+	#japan-map {
+	display:none;
+	}
 
 
 } 
 
+@media screen and (max-width: 581px){
+	header{
+		height:80px;
+	}
+	.logo{
+		top:50px;
+		margin-left:15px;
+		padding:0px;
+		font-size: 25px;
+	}
+
+	.nav-container{
+		width:100%;
+		font-size: 25px;
+	}
+	
+	.nav-container ul{ 
+		float:right;
+}
+	
+	.search-container {
+		height:300px;
+		text-align: center;
+	}
+	
+	.search-container img{
+		object-fit: cover;
+	}
+	.search-container h2{
+		font-family:'Potta One', cursive;
+		left: 60px;
+		font-size: 15px;
+	}
+	.txt{
+		right:30px;
+		height:30px;
+		width: 200px;
+	}
+	.btn{
+		height:20px;
+		top:2px;
+		margin-right:25px;
+	}
+	
+	.explain h1{
+	font-family:'Mochiy Pop One', sans-serif;
+	padding-top:3px;
+
+}
+
+}
+
+
+/*レストラン一覧ページ*/
+
+.restaurants{
+	text-align: center;
+	margin-top:130px;
+	height:100%;
+	display:block;
+	margin-right: 30%;
+}
+
+.restaurants h1{
+	height:60px;
+	font-size: 50px;
+	
+}
+
+table{
+	margin-left:200px;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius:20px;
+    border-bottom: solid 5px white;
+
+}
+
+tr{
+	background-color:grey;
+}
+
+th {
+	height:100px;
+    position: relative;
+	text-align: center;
+	width: 30%;
+	background-color: #52c2d0;
+	color: white;
+	border-top-left-radius:20px;
+	border-bottom-left-radius:20px;
+}
+
+
+td{
+	width: 70%;
+	text-align: center;
+	background-color: #eee;
+	padding: 10px 0;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+}
+
+
+/*詳細ページ*/
+
+
+.detail{
+	margin-top:100px;
+	text-align: center;
+}
+
+.detail h1{
+	height:100px;
+	font-size: 50px;
+}
+
+.detail p{
+	margin:10px 70px;
+	font-size: 16px;
+}
+
+
+
+
 .about{
-	height:200px;
+	width: 100%;
+	padding-top:30px;
+	font-family:'Mochiy Pop One', sans-serif;
+	height:500px;
 	text-align: center;
 }
 .about h1{
@@ -632,15 +744,23 @@ a:hover {
     }
     
 .about p{
-    	padding-top:40px;
+	font-size: 30px;
+    padding-top:40px;
     }
     
+
+    
 .footer{
+	font-size: 20px;
 	background-color: grey;
-	margin-top:70px;
 	height: 200px;
 	text-align: center;
 }
 .footer ul{
+	margin-top:40px;
 	list-style: none;
+}
+
+.footer ul li{
+	padding-top:30px;
 }

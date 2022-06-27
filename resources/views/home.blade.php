@@ -2,12 +2,12 @@
 @section('title','HOME')
 @section ('home')
 	<div class="search-container">
-		<img src="{{ asset('/img/home.jpg') }}">
-		<h2>Hello<br>Hello</h2>
+		<img class="healthy-img" src="{{ asset('/img/healthy.svg') }}">
+		<h2>Find healthy restaurants</h2>
 		<div class="search">
-			<form class="search-bar">
+			<form>
 				<input class="txt" type="text" size="25" placeholder="県名を入力">
-				<input class="btn" type="submit" value="検索">
+				<input class="btn" src="{{ asset('/img/search-outline.svg')}}" type="image" >
 			</form>
 		</div>
 	</div>
@@ -299,9 +299,8 @@
 </div> <!-- japan-map -->
 
 	<div class="about">
-		<h1>What is 減量飯?</h1>
-		<p>hellohellohello
-		<br>hellohellohello
-		</p>
+			<h1>What is 減量飯?</h1>
+			<p>This service helps to find restaurants that you can go even you are in diet.</p>
+			<p>I hope to enjoy your meal.</p>
 	</div>
 @endsection

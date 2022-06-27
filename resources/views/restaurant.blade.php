@@ -1,13 +1,19 @@
 @extends('layout')
 @section('title','Restaurants')
 @section ('home')
-    <h1>Restaurants</h1>
-    <div class='posts'>
+    <div class='restaurants'>
+     <h1>一覧</h1>
         @foreach ($restaurants as $restaurant)
-            <div class='post'>
-                <h2 class='title'>{{ $restaurant->name}}</h2>
-                <p class='body'>{{ $restaurant->address }}</p>
+            <div class='restaurant'>
+                <table>
+                    <tr>
+                        <th><a href="/posts/{{$restaurant->id}}">{{ $restaurant->name}} </th>
+                        <td>{{ $restaurant->address }}</td>
+                        </a>
+                    </tr>
+                </table>
             </div>
+            </a>
         @endforeach
     </div>
 @endsection

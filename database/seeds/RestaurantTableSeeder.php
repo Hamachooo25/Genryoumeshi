@@ -12,6 +12,15 @@ class RestaurantTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Restaurant::class, 300) ->create(); 
+        Restaurant::create([
+        'id'=>'11',
+        'name'=>'精進カフェ宙',
+        'email'=>'hehe@hehe',
+        'password'=>'hehe',
+        'address'=>'〒761-0121 香川県高松市牟礼町牟礼2500-2',
+        'prefecture_id'=>'36',
+        'created_at'=>now(),
+        'updated_at'=>now(),
+        ]);
     }
 }
