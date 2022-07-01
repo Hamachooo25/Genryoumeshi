@@ -12,7 +12,6 @@
     @include('header')
   </header>
   @yield('home')
-  
   <footer>
     @include('footer')
   </footer>

@@ -301,6 +301,6 @@
 	<div class="about">
 			<h1>What is 減量飯?</h1>
 			<p>This service helps to find restaurants that you can go even you are in diet.</p>
-			<p>I hope to enjoy your meal.</p>
+			
 	</div>
 @endsection
