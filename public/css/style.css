@@ -775,8 +775,14 @@ td{
 
 
 .detail{
+	width:100%;
 	margin-top:100px;
 	text-align: center;
+}
+
+.detail img{
+	width:40%;
+	height:40%;
 }
 
 .detail h1{
