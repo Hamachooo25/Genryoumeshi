@@ -15,7 +15,8 @@
     
     <div class="explain">
    	
-    	<h1>CHOOSE FROM MAP</h1>
+    	<h1 class="pref-map">地図から選ぶ</h1>
+    	<h1 class="pref-name">県名から選ぶ</h1><!-- Only for smart phone -->
 
     </div>
 	<div id="japan-map" class="clearfix">
