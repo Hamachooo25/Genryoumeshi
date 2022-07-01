@@ -726,8 +726,9 @@ a:hover {
 	text-align: center;
 	margin-top:130px;
 	height:100%;
+	width:100%;
 	display:block;
-	margin-right: 30%;
+    margin-left: 10%;
 }
 
 .restaurants h1{
@@ -737,12 +738,11 @@ a:hover {
 }
 
 table{
-	margin-left:200px;
-    width: 100%;
+    width: 70%;
     border-collapse: collapse;
     border-radius:20px;
     border-bottom: solid 5px white;
-
+    padding-left:30px;
 }
 
 tr{
@@ -753,7 +753,7 @@ th {
 	height:100px;
     position: relative;
 	text-align: center;
-	width: 30%;
+	width: 20%;
 	background-color: #52c2d0;
 	color: white;
 	border-top-left-radius:20px;
@@ -762,7 +762,7 @@ th {
 
 
 td{
-	width: 70%;
+	width:20%;
 	text-align: center;
 	background-color: #eee;
 	padding: 10px 0;
