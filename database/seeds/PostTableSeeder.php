@@ -34,5 +34,26 @@ CLOSE 毎週月曜日＋数日
             'created_at'=>now(),
             'updated_at'=>now(),
         ]);
+        
+        Post::create([
+            'title'=>'筋肉食堂',
+            'body'=>'〒106-0032 東京都港区六本木7-8-5
+TEL：03-6434-0293
+■営業時間
+月～金：ランチ 11:30〜15:00(14:30LO)
+ディナー 17:30〜23:00
+(フード22:00LO/ドリンク22:30LO)
+
+土　　：11:30〜23:00
+(フード22:00LO/ドリンク22:30LO)
+
+日・祝：11:30〜20:30(フード＆ドリンク20:00LO)
+ホームページ　http://kinnikushokudo.jp/shoplist.html',
+            'picture_url'=>'http://kinnikushokudo.jp/images/logo_s.png',
+            'restaurant_id'=>'33',
+            'created_at'=>now(),
+            'updated_at'=>now(),
+
+            ]);
     }
 }

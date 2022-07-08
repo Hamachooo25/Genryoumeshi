@@ -12,6 +12,7 @@
 */
 Route::get('/', 'HomeController@view');
 Route::get('/restaurants/{prefecture}','HomeController@show')-> name('restaurants');
+Route::get('/search','HomeController@search');
 Route::get('/posts/{id}','HomeController@index') -> name('index');
 //Route::get('create', 'HomeController@create');
 //Route::post('/restaurants', 'HomeController@store');

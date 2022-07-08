@@ -1,6 +1,6 @@
 @extends('layout')
-@section('title','Restaurants')
-@section ('home')
+@section('title','search result')
+@section ('search')
     <div class='restaurants'>
      <h1>一覧</h1>
      <!--[<a href='/create'>create</a>-->

@@ -5,19 +5,15 @@
 		<img class="healthy-img" src="{{ asset('/img/healthy.svg') }}">
 		<h2>Find healthy restaurants</h2>
 		<div class="search">
-			<form>
-				<input class="txt" type="text" size="25" placeholder="県名を入力">
-				<input class="btn" src="{{ asset('/img/search-outline.svg')}}" type="image" >
+			<form type="get" action="{{url('/search')}}">
+				<input class="txt" name="query" type="search" size="25" placeholder="県名を入力">
+				<input class="btn" value="" type="submit"  >
 			</form>
 		</div>
 	</div>
-
-    
     <div class="explain">
-   	
     	<h1 class="pref-map">地図から選ぶ</h1>
     	<h1 class="pref-name">県名から選ぶ</h1><!-- Only for smart phone -->
-
     </div>
 	<div id="japan-map" class="clearfix">
 		
@@ -297,8 +293,7 @@
 	</div>
 </div>
 
-</div> <!-- japan-map -->
-
+</div> <!-- japan-map --> 
 	<div class="about">
 			<h1>What is 減量飯?</h1>
 			<p>This service helps to find restaurants that you can go even you are in diet.</p>

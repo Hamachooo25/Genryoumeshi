@@ -12,6 +12,7 @@
     @include('header')
   </header>
   @yield('home')
+  @yield('search')
   <footer>
     @include('footer')
   </footer>

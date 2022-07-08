@@ -30,6 +30,13 @@ class HomeController extends Controller
         return view('post',['post' => $post]);
     }
     
+    public function search()
+    {
+        $search_text = $_GET['query'];
+        $restaurants = Restaurant::where('address','LIKE','%'.$search_text.'%')->get();
+        
+        return view('search',compact('restaurants'));
+    }
     /*public function create()
     {
         return view('create');
